@@ -127,12 +127,10 @@ header {
 
 .burger_menu {
     display: block;
-    width: 25px;
-    height: 25px;
-    padding: 10px;
+    width: 30px;
+    height: 40px;
     position: relative;
     cursor: pointer;
-    border-radius: 50%;
     margin-top: 28px;
 }
 
