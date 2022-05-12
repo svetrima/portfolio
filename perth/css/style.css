@@ -60,9 +60,110 @@ a {
     cursor: pointer;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /*HEADER*/
 header {
-    background: repeating-linear-gradient(-45deg, #62c2e7, #62c2e7 5px, #61c0e7, #61c0e7 130px);
+    background: repeating-linear-gradient(-45deg, #04c4ec, #04c4ec 5px, #08c4ec, #08c4ec 130px);
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+    box-shadow: 14px 14px rgba(13, 169, 229, 0.7);
+}
+
+.logo a {
+    font-family: 'Kaushan Script';
+    color: #0da9e5;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 85px;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.menu a {
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu .fa {
+    border-radius: 50%;
+    color: #52aede;
+    margin-right: 20px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.close {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.burger_menu {
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 14px;
+}
+
+.burger_menu:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.burger_menu span {
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    left: 8px;
+    transition: all 0.3s linear;
+}
+
+.one {
+    top: 10px;
+}
+
+.two {
+    top: 16px;
+}
+
+.three {
+    top: 22px;
+}
+
+.four {
+    top: 28px;
 }
 
 .header_content {
