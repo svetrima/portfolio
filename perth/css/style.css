@@ -35,7 +35,7 @@
 }
 
 body {
-    font-family: 'ProximaNovaRegular';
+    font-family: "ProximaNovaRegular";
     margin: 0 auto;
    /* max-width: 1600px;
     min-width: 75%;*/
@@ -43,7 +43,7 @@ body {
 }
 
 .wrapper {
-    max-width: 74.6%;
+    max-width: 1260px;
     margin: 0 auto;
 }
 
@@ -81,7 +81,7 @@ header {
 }
 
 .logo a {
-    font-family: 'Kaushan Script';
+    font-family: "Kaushan Script";
     color: #0da9e5;
     font-size: 50px;
     font-weight: 400;
@@ -182,7 +182,7 @@ header {
 }
 
 .header_title {
-    font-family: 'BlackJackRegular';
+    font-family: "BlackJackRegular";
     color: #ffffff;
     font-size: 70px;
     font-weight: 400;
@@ -191,7 +191,7 @@ header {
 }
 
 .header__description {
-    font-family: 'ProximaNovaRegular';
+    font-family: "ProximaNovaRegular";
     color: #ffffff;
     font-size: 35px;
     font-weight: 300;
