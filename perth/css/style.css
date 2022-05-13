@@ -8,7 +8,7 @@
 @font-face {
     font-family: "ProximaNovaRegular";
     src: url("../assets/fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
-    src: url("../assets/fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    src: url("../assets/fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"), url("../assets/fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -16,7 +16,7 @@
 @font-face {
     font-family: "ProximaNovaBold";
     src: url("../assets/fonts/ProximaNovaBold/ProximaNovaBold.eot");
-    src: url("../assets/fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+    src: url("../assets/fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../assets/fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -24,7 +24,7 @@
 @font-face {
     font-family: "ProximaNovaBlack";
     src: url("../assets/fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
-    src: url("../assets/fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+    src: url("../assets/fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"), url("../assets/fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -278,7 +278,8 @@ header {
     position: relative;
 }
 
-.features_content__title, .portfolio_content_title {
+.features_content__title,
+.portfolio_content_title {
     font-size: 40px;
     font-weight: 300;
     color: #545454;
@@ -286,7 +287,8 @@ header {
 }
 
 .features_content__description,
-.description_blocquotes, .portfolio_content__description {
+.description_blocquotes,
+.portfolio_content__description {
     font-size: 16px;
     font-weight: 400;
     color: #7e7e7e;
@@ -337,53 +339,65 @@ header {
     bottom: 0;
     right: -162px;
 }
+
 /***PORTFOLIO**/
-.portfolio{
+.portfolio {
     padding-bottom: 142px;
 }
-.portfolio .wrapper{
-    display:flex;
+
+.portfolio .wrapper {
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.portfolio_content{
+
+.portfolio_content {
     display: flex;
     justify-content: flex-start;
-    width:400px;
+    width: 400px;
     flex-wrap: wrap;
-    position:relative;
+    position: relative;
 }
-.portfolio_content{
-    padding-top:95px;
-    padding-bottom:100px;
+
+.portfolio_content {
+    padding-top: 95px;
+    padding-bottom: 100px;
 }
- .portfolio_content__description:not(.strong) {
-    padding-top:20px;
-    padding-bottom:55px;
+
+.portfolio_content__description:not(.strong) {
+    padding-top: 20px;
+    padding-bottom: 55px;
 }
-.strong{
- font-style: italic;
- padding-top:5px;
+
+.strong {
+    font-style: italic;
+    padding-top: 5px;
 }
-.btn_view{
+
+.btn_view {
     width: 224px;
     border-color: #ea4c89;
 }
+
 .btn_view a {
     color: #ea4c89;
-  }
- .btn_view a:hover {
+}
+
+.btn_view a:hover {
     color: #ffffff;
     background-color: #ea4c89;
-  }
-  .btn_view a:hover .fa-dribbble {
+}
+
+.btn_view a:hover .fa-dribbble {
     color: #ffffff;
-  }
-  .btn_view .fa-dribbble {
+}
+
+.btn_view .fa-dribbble {
     color: #ea4c89;
     padding-left: 10px;
-  }
-  .portfolio_content__image {
+}
+
+.portfolio_content__image {
     position: absolute;
     background-image: url('../assets/img/devices.png');
     width: 759px;
@@ -391,42 +405,51 @@ header {
     bottom: -141px;
     left: -697px;
 }
+
 /**DONATE**/
-.donate{
+.donate {
     background-image: url("../assets/img/bg_green.png");
 }
-.donate_content{
+
+.donate_content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top:95px;
-    padding-bottom:53px;
+    padding-top: 95px;
+    padding-bottom: 53px;
 }
-.donate_content__title{
-color: #ffffff;
-font-size: 40px;
+
+.donate_content__title {
+    color: #ffffff;
+    font-size: 40px;
     font-weight: 400;
     line-height: 40px;
-    margin-bottom:35px;
+    margin-bottom: 35px;
 }
-.btn_donate{
-    width:224px;
-    margin-bottom:49px;
+
+.btn_donate {
+    width: 224px;
+    margin-bottom: 49px;
 }
-.btn_donate a{
-    color:#ffffff;
+
+.btn_donate a {
+    color: #ffffff;
 }
+
 .btn_donate span {
     font-weight: 700;
     font-style: italic;
-  }
-  .btn_donate a:hover {
+}
+
+.btn_donate a:hover {
     color: #15c5a0;
     background-color: #ffffff;
-  }
-  .btn_donate a:hover .fa-beer {
+}
+
+.btn_donate a:hover .fa-beer {
     color: #15c5a0;
-  }
+}
+
 .fa-beer {
     color: #ffffff;
     font-size: 15px;
@@ -434,4 +457,110 @@ font-size: 40px;
     line-height: 25px;
     text-align: right;
     padding-left: 10px;
-  }
+}
+
+/**SUBSCRIBE*/
+.subscribe {
+    background-color: #f4f4f4;
+    padding-top: 240px;
+    padding-bottom: 240px;
+}
+
+.subscribe_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe_content__social {
+    margin-bottom: 60px;
+}
+
+.social {
+    background-image: url("../assets/img/social_icons.png");
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    margin-right: 31px;
+    transition: transform 250ms;
+}
+
+.social:last-child {
+    margin-right: 0;
+}
+
+.social:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.icon__dribble {
+    background-position: 0px 0px;
+}
+
+.icon__fb {
+    background-position: -91px 0px;
+}
+
+.icon__tw {
+    background-position: -182px 0px;
+}
+
+.icon__telegram {
+    background-position: -273px 0px;
+}
+
+.subscribe_content__drop {
+    display: flex;
+    align-items: center;
+}
+
+.drop__title {
+    color: #545454;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.send_email {
+    width: 200px;
+    position: relative;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+    font-family: 'ProximaNovaRegular';
+    color: #d3d3d3;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    font-style: italic;
+    padding-left: 9px;
+}
+
+.btn_drop {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    border: none;
+    border-radius: 0;
+    border-left: 2px solid #e2e2e2;
+    color: #6ec5ea;
+    padding-left: 10px;
+}
