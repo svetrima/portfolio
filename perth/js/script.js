@@ -1,8 +1,21 @@
 const openBurger = document.getElementById('burger');
-	openBurger.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.querySelector('.burger_menu').classList.toggle('open');
-    document.querySelector('.navigation').classList.toggle('open');
-    document.querySelector('.logo').classList.toggle('open');
-    document.querySelector('body').classList.toggle('overlay');
+const navigation = document.querySelector('.navigation');
+const burgerMenu = document.querySelector('.burger_menu');
+const body = document.querySelector('body');
+
+openBurger.addEventListener('click', (e) => {
+  e.preventDefault();
+  navigation.classList.toggle('open');
+  burgerMenu.classList.toggle('open');
+  body.classList.toggle('overlay');
+  body.style.overflowY = 'hidden';
+});
+
+window.addEventListener('click', (e) => {
+  if (!e.target.closest('.burger_menu') && !e.target.closest('.burger')) {
+    navigation.classList.remove("open");
+    burgerMenu.classList.remove("open");
+    body.classList.remove('overlay');
+    body.style.overflowY = 'visible';
+  }
 });
