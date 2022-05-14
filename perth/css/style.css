@@ -37,13 +37,12 @@
 body {
     font-family: "ProximaNovaRegular";
     margin: 0 auto;
-    /* max-width: 1600px;
-    min-width: 75%;*/
     box-sizing: border-box;
 }
 
 .wrapper {
-    max-width: 938px;
+    max-width: 898px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -341,10 +340,6 @@ header {
 }
 
 /***PORTFOLIO**/
-.portfolio {
-    padding-bottom: 142px;
-}
-
 .portfolio .wrapper {
     display: flex;
     flex-direction: column;
@@ -361,7 +356,7 @@ header {
 
 .portfolio_content {
     padding-top: 95px;
-    padding-bottom: 100px;
+    padding-bottom: 242px;
 }
 
 .portfolio_content__description:not(.strong) {
@@ -402,7 +397,7 @@ header {
     background-image: url('../assets/img/devices.png');
     width: 759px;
     height: 367px;
-    bottom: -141px;
+    bottom: 0;
     left: -697px;
 }
 
@@ -462,14 +457,13 @@ header {
 /**SUBSCRIBE*/
 .subscribe {
     background-color: #f4f4f4;
-    padding-top: 240px;
-    padding-bottom: 240px;
 }
 
 .subscribe_content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding:240px 0;
 }
 
 .subscribe_content__social {
