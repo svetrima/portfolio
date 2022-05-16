@@ -9,6 +9,9 @@ openBurger.addEventListener('click', (e) => {
   burgerMenu.classList.toggle('open');
   body.classList.toggle('overlay');
   body.style.overflowY = 'hidden';
+  if (!e.target.closest('.open')) {
+    body.style.overflowY = 'visible';
+  }
 });
 
 window.addEventListener('click', (e) => {
