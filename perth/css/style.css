@@ -36,7 +36,6 @@
 
 body {
     font-family: "ProximaNovaRegular";
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -523,6 +522,7 @@ header {
 .subscribe_content__drop {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .drop__title {
