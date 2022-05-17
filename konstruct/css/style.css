@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+html body .wrapper {
+  width: 941px;
+  margin: 0 auto;
+  padding: 0px 250px;
+  border: 1px solid green;
+}
