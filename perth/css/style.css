@@ -2,7 +2,10 @@
 
 @font-face {
     font-family: "BlackJackRegular";
-    src: url("../assets/fonts/BlackJack.otf") format("opentype");
+    src: url("../assets/fonts/Blackjack/blackjack.otf") format("opentype");
+    src: url("../assets/fonts/Blackjack/blackjack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
