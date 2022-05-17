@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+@font-face {
+    font-family: "BlackJackRegular";
+    src: url("../assets/fonts/BlackJack.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../assets/fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("../assets/fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"), url("../assets/fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ProximaNovaBold";
+    src: url("../assets/fonts/ProximaNovaBold/ProximaNovaBold.eot");
+    src: url("../assets/fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../assets/fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ProximaNovaBlack";
+    src: url("../assets/fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
+    src: url("../assets/fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"), url("../assets/fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "ProximaNovaRegular";
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 898px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: solid 2px #ffffff;
+    width: 173px;
+    height: 55px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    height: 100%;
+}
+
+.btn a {
+    display: block;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*HEADER*/
+header {
+    background: repeating-linear-gradient(-45deg, #04c4ec, #04c4ec 5px, #08c4ec, #08c4ec 130px);
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.logo {
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+    box-shadow: 14px 14px rgba(13, 169, 229, 0.7);
+}
+
+.logo a {
+    font-family: "Kaushan Script";
+    color: #0da9e5;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 75px;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.navigation {
+    display: block;
+    position: absolute;
+    width: 200px;
+    top: 103px;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition: opacity .4s linear;
+    visibility: hidden;
+    z-index: 102;
+}
+
+.navigation_open {
+    -webkit-transform: translateX(300%);
+    transform: translateX(300%);
+    transition: all .7s linear;
+    visibility: visible;
+    z-index: 102;
+}
+
+.menu a {
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+}
+
+.menu li {
+    margin-bottom: 20px;
+    transition: width 2s ease-in-out;
+    width: 100%;
+}
+
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 600px;
+}
+
+.menu .fa {
+    border-radius: 50%;
+    color: #52aede;
+    margin-right: 20px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.open {
+    display: block;
+}
+
+.burger_menu {
+    display: block;
+    width: 30px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 28px;
+    z-index: 101;
+}
+
+.burger_menu:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.burger_menu span {
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    right: 0;
+    transition: all 0.3s linear;
+}
+
+.one {
+    top: 10px;
+}
+
+.two {
+    top: 16px;
+}
+
+.three {
+    top: 22px;
+}
+
+.four {
+    top: 28px;
+}
+
+.open .one {
+    transform: rotate(45deg);
+    top: 23px;
+    border-radius: 3px;
+    height: 5px;
+}
+
+.open .two,
+.open .three {
+    display: none;
+}
+
+.open .four {
+    transform: rotate(-45deg);
+    top: 23px;
+    border-radius: 3px;
+    height: 5px;
+}
+
+.overlay::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(243, 120, 122, 0.9);
+    transition: all 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.header_content__image {
+    position: absolute;
+    background-image: url('../assets/img/iphone.png');
+    width: 228px;
+    height: 267px;
+    bottom: 0;
+    left: 70px;
+}
+
+.header_title {
+    font-family: "BlackJackRegular";
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: 400;
+    font-style: italic;
+    margin:30px 0px 20px;
+}
+
+.header__description {
+    font-family: "ProximaNovaRegular";
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 49px;
+}
+
+.header__description span {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.btn_dwnload {
+    margin-bottom: 232px;
+}
+
+.btn_dwnload a {
+    color: #ffffff;
+}
+
+.btn_dwnload a:hover {
+    color: #7dbbf0;
+    background-color: #ffffff;
+}
+
+/**FEATURES*/
+.features {
+    background-color: #f4f4f4;
+}
+
+.features_content {
+    padding: 138px 0px 140px;
+    position: relative;
+}
+
+.features_content__title,
+.portfolio_content_title {
+    font-size: 40px;
+    font-weight: 300;
+    color: #545454;
+    margin-bottom: 27px;
+}
+
+.features_content__description,
+.description_blocquotes,
+.portfolio_content__description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e7e7e;
+    line-height: 25px;
+}
+
+.features_content__description {
+    margin-bottom: 23px;
+    width: 550px;
+}
+
+.description_blocquotes {
+    font-style: italic;
+    border-left: 6px solid #4eacdd;
+    margin-bottom: 71px;
+    padding-left: 20px;
+    width: 620px;
+}
+
+.btn_snd {
+    border-color: #14af8f;
+    background-color: transparent;
+}
+
+.btn_snd a {
+    color: #14af8f;
+}
+
+.btn_snd .fa-envelope {
+    color: #14af8f;
+    padding-left: 10px;
+}
+
+.btn_snd a:hover {
+    color: #ffffff;
+    background-color: #14af8f;
+}
+
+.btn_snd a:hover .fa-envelope {
+    color: #ffffff;
+}
+
+.features_content__image {
+    position: absolute;
+    background-image: url('../assets/img/ipad.png');
+    width: 339px;
+    height: 500px;
+    bottom: 0;
+    right: -162px;
+}
+
+/***PORTFOLIO**/
+.portfolio .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.portfolio_content {
+    display: flex;
+    justify-content: flex-start;
+    width: 400px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.portfolio_content {
+    padding:95px 0px 242px;
+}
+
+.portfolio_content__description:not(.strong) {
+    padding:20px 0px 55px;
+}
+
+.strong {
+    font-style: italic;
+    padding-top: 5px;
+}
+
+.btn_view {
+    width: 224px;
+    border-color: #ea4c89;
+}
+
+.btn_view a {
+    color: #ea4c89;
+}
+
+.btn_view a:hover {
+    color: #ffffff;
+    background-color: #ea4c89;
+}
+
+.btn_view a:hover .fa-dribbble {
+    color: #ffffff;
+}
+
+.btn_view .fa-dribbble {
+    color: #ea4c89;
+    padding-left: 10px;
+}
+
+.portfolio_content__image {
+    position: absolute;
+    background-image: url('../assets/img/devices.png');
+    width: 759px;
+    height: 367px;
+    bottom: 0;
+    left: -697px;
+}
+
+/**DONATE**/
+.donate {
+    background-image: url("../assets/img/bg_green.png");
+}
+
+.donate_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:95px 0px 53px;
+}
+
+.donate_content__title {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 35px;
+}
+
+.btn_donate {
+    width: 224px;
+    margin-bottom: 49px;
+}
+
+.btn_donate a {
+    color: #ffffff;
+}
+
+.btn_donate span {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.btn_donate a:hover {
+    color: #15c5a0;
+    background-color: #ffffff;
+}
+
+.btn_donate a:hover .fa-beer {
+    color: #15c5a0;
+}
+
+.fa-beer {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: right;
+    padding-left: 10px;
+}
+
+/**SUBSCRIBE*/
+.subscribe {
+    background-color: #f4f4f4;
+}
+
+.subscribe_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 240px 0;
+}
+
+.subscribe_content__social {
+    margin-bottom: 60px;
+}
+
+.social {
+    background-image: url("../assets/img/social_icons.png");
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    margin-right: 31px;
+    transition: transform 250ms;
+}
+
+.social:last-child {
+    margin-right: 0;
+}
+
+.social:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.icon__dribble {
+    background-position: 0px 0px;
+}
+
+.icon__fb {
+    background-position: -91px 0px;
+}
+
+.icon__tw {
+    background-position: -182px 0px;
+}
+
+.icon__telegram {
+    background-position: -273px 0px;
+}
+
+.subscribe_content__drop {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.drop__title {
+    color: #545454;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.send_email {
+    width: 200px;
+    position: relative;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+    font-family: 'ProximaNovaRegular';
+    color: #d3d3d3;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    font-style: italic;
+    padding-left: 9px;
+}
+
+.btn_drop {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    border: none;
+    border-radius: 0;
+    border-left: 2px solid #e2e2e2;
+    color: #6ec5ea;
+    padding-left: 10px;
+}
+
+/**FOOTER**/
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+}
+
+.copyright_content {
+    color: #545454;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    font-style: italic;
+}
+
+.copyright_content a {
+    color: #6dc5ea;
+}
+
+.page_up {
+    border-radius: 5px;
+    background-color: rgba(244, 244, 244, 0.5);
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: #545454;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+    position: fixed;
+    bottom: 28px;
+    right: 59px;
+    z-index: 112;
+}
