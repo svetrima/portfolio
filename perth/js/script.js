@@ -5,7 +5,7 @@ const body = document.querySelector('body');
 
 openBurger.addEventListener('click', (e) => {
   e.preventDefault();
-  navigation.classList.toggle('open');
+  navigation.classList.toggle('navigation_open');
   burgerMenu.classList.toggle('open');
   body.classList.toggle('overlay');
   body.style.overflowY = 'hidden';
@@ -16,8 +16,8 @@ openBurger.addEventListener('click', (e) => {
 
 window.addEventListener('click', (e) => {
   if (!e.target.closest('.burger_menu') && !e.target.closest('.burger')) {
-    navigation.classList.remove("open");
-    burgerMenu.classList.remove("open");
+    navigation.classList.remove('navigation_open');
+    burgerMenu.classList.remove('open');
     body.classList.remove('overlay');
     body.style.overflowY = 'visible';
   }
