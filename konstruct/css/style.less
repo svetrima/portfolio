@@ -2,6 +2,7 @@
     font-family: "BebasNeueBold";
     src: url("../assets/fonts/BebasNeueBold.ttf") format("truetype");
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 @color-base: #48555B;
 @color-base-additional: #FFFFFF;
@@ -15,7 +16,7 @@
 }
 
 html {
-    font-family: "OpenSans";
+    font-family: "OpenSans", sans-serif;;
     font-size: 10px;
     scroll-behavior: smooth;
 }
@@ -64,6 +65,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.layouts-4-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 /*header*/
@@ -383,4 +390,115 @@ input[type="email"] {
 .btn_sbm {
     color: @color-base-additional;
     text-transform: uppercase;
+}
+
+/*footer*/
+footer {
+    background-color: #141A20;
+}
+
+.company {
+    width: 250px;
+
+    .logo_main {
+        margin-bottom: 19px;
+    }
+}
+
+.footer_title {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.0846rem;
+    color: @color-base-additional;
+    text-transform: uppercase;
+    padding-top: 42px;
+    margin-bottom: 19px;
+}
+
+.footer_description {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.085rem;
+    color: @color-base-additional;
+}
+
+.links {
+    ul:not(:last-child) {
+        margin-right: 34px;
+    }
+
+    .layouts-3-columns {
+        align-items: flex-start;
+    }
+}
+
+.links_item {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.0846rem;
+
+    a {
+        text-transform: uppercase;
+        color: @color-base-additional;
+    }
+}
+
+.contact {
+    width: 141px;
+
+    a {
+        margin-top: 10px;
+    }
+
+}
+
+.contact_info__description {
+    display: block;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.0846rem;
+    color: @color-base-additional;
+}
+
+.social {
+    width: 13px;
+    height: 13px;
+    margin-right: 38px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../assets/img/socials.png");
+    transition: transform 450ms;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+    &:hover {
+        color: #FF4500;
+        transform: translateY(-5px);
+    }
+}
+
+.icon_fb {
+    background-position: 0px 0px;
+}
+
+.icon_tw {
+    background-position: -37px -1px;
+}
+
+.icon_ggl {
+    background-position: -74px 0;
+}
+
+.footer_copyright {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.0846rem;
+    color: @color-base-additional;
+    text-align: center;
+    padding:23px 0px;
+}
+.footer_copyright:not(.wrapper){
+    background-color: #171819;
 }

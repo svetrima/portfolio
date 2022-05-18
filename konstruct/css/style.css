@@ -2,12 +2,52 @@
   font-family: "BebasNeueBold";
   src: url("../assets/fonts/BebasNeueBold.ttf") format("truetype");
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf) format('truetype');
+}
 * {
   padding: 0;
   margin: 0;
 }
 html {
-  font-family: "OpenSans";
+  font-family: "OpenSans", sans-serif;
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -48,6 +88,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.layouts-4-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 /*header*/
 header {
@@ -340,4 +385,93 @@ input[type="email"]::placeholder {
 .btn_sbm {
   color: #FFFFFF;
   text-transform: uppercase;
+}
+/*footer*/
+footer {
+  background-color: #141A20;
+}
+.company {
+  width: 250px;
+}
+.company .logo_main {
+  margin-bottom: 19px;
+}
+.footer_title {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.0846rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-top: 42px;
+  margin-bottom: 19px;
+}
+.footer_description {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.085rem;
+  color: #FFFFFF;
+}
+.links ul:not(:last-child) {
+  margin-right: 34px;
+}
+.links .layouts-3-columns {
+  align-items: flex-start;
+}
+.links_item {
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.0846rem;
+}
+.links_item a {
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.contact {
+  width: 141px;
+}
+.contact a {
+  margin-top: 10px;
+}
+.contact_info__description {
+  display: block;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.0846rem;
+  color: #FFFFFF;
+}
+.social {
+  width: 13px;
+  height: 13px;
+  margin-right: 38px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../assets/img/socials.png");
+  transition: transform 450ms;
+}
+.social:last-child {
+  margin-right: 0px;
+}
+.social:hover {
+  color: #FF4500;
+  transform: translateY(-5px);
+}
+.icon_fb {
+  background-position: 0px 0px;
+}
+.icon_tw {
+  background-position: -37px -1px;
+}
+.icon_ggl {
+  background-position: -74px 0;
+}
+.footer_copyright {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.0846rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 23px 0px;
+}
+.footer_copyright:not(.wrapper) {
+  background-color: #171819;
 }
