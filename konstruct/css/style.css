@@ -119,6 +119,10 @@ header .wrapper {
   width: 102px;
   height: 23px;
 }
+.logo a {
+  display: block;
+  height: 100%;
+}
 .logo_main {
   background-image: url('../assets/img/header_logo.png');
   margin-bottom: 317px;
@@ -175,6 +179,9 @@ nav {
   text-transform: uppercase;
   color: #48555B;
 }
+.menu_item a:hover {
+  color: #00A4E5;
+}
 .menu_item .active {
   color: #00A4E5;
 }
@@ -219,8 +226,8 @@ nav {
   color: #48555B;
   margin-bottom: 30px;
 }
-.about_content__title span {
-  color: #00A4E5;
+.about_content__title a {
+  color: #16ACE8;
 }
 .about_content__description {
   font-size: 1.3rem;
@@ -396,7 +403,7 @@ input[type="email"] {
   outline: none;
   border: none;
   padding: 12.02px;
-  margin-right: -2px;
+  margin-right: -3px;
 }
 input[type="email"]::placeholder {
   text-align: justify;
@@ -413,6 +420,9 @@ input[type="email"]::placeholder {
 /*footer*/
 footer {
   background-color: #141A20;
+}
+footer .wrapper {
+  padding-bottom: 39px;
 }
 .company {
   width: 250px;
@@ -453,11 +463,17 @@ footer {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.links_item a:hover {
+  color: #00A4E5;
+}
 .contact {
   width: 141px;
 }
 .contact a {
   margin-top: 10px;
+}
+.contact a:hover {
+  color: #FF4500;
 }
 .contact_info__description {
   display: block;

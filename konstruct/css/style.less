@@ -91,6 +91,10 @@ header {
 .logo {
     width: 102px;
     height: 23px;
+    a{
+        display:block;
+        height:100%;
+    }
 }
 
 .logo_main {
@@ -156,6 +160,9 @@ nav {
         letter-spacing: 0.109rem;
         text-transform: uppercase;
         color: @color-base;
+        &:hover{
+            color: @color-active-link;
+        }
     }
 
     .active {
@@ -209,8 +216,8 @@ nav {
     color: @color-base;
     margin-bottom: 30px;
 
-    span {
-        color: @color-active-link;
+    a {
+        color: #16ACE8;
     }
 }
 
@@ -389,7 +396,7 @@ input[type="email"] {
     outline: none;
     border: none;
     padding: 12.02px;
-    margin-right: -2px;
+    margin-right: -3px;
 
     &::placeholder {
         text-align: justify;
@@ -409,6 +416,9 @@ input[type="email"] {
 /*footer*/
 footer {
     background-color: #141A20;
+    .wrapper{
+        padding-bottom:39px;
+    }
 }
 
 .company {
@@ -457,6 +467,9 @@ footer {
     a {
         text-transform: uppercase;
         color: @color-base-additional;
+        &:hover{
+            color: @color-active-link;
+        }
     }
 }
 
@@ -465,6 +478,9 @@ footer {
 
     a {
         margin-top: 10px;
+        &:hover{
+            color: #FF4500;
+        }
     }
 
 }
