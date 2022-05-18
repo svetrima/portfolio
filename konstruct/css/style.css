@@ -246,6 +246,10 @@ nav {
 .services_main__title:hover::after {
   width: 100%;
 }
+.services_main__title::after {
+  left: 0;
+  transform: translateX(0);
+}
 .services_main__description {
   font-size: 1.1rem;
   line-height: 1.9rem;
