@@ -272,8 +272,9 @@ nav {
     .about_title;
     margin-bottom: 0;
     margin-top: 0;
-    &::after{
-        left:0;
+
+    &::after {
+        left: 0;
         transform: translateX(0);
     }
 }
@@ -314,4 +315,29 @@ nav {
     letter-spacing: 0.0426rem;
     color: @color-base;
     margin-bottom: 13px;
+}
+
+/*work*/
+.work {
+    background-image: url("../assets/img/bg_work.png");
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.work .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 231px;
+}
+
+.work_title {
+    margin: 120px 0 25px;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    text-align: center;
+    letter-spacing: 0.015rem;
+    color: @color-base;
+    width: 350px;
 }
