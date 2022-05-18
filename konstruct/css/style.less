@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "BebasNeueBold";
+    src: url("../assets/fonts/BebasNeueBold.ttf") format("truetype");
+}
+
+@color-base: #48555B;
+@color-base-additional: #FFFFFF;
+@color-active-link: #00A4E5;
+@color-logo-additional: #171819;
+@color-btn: #00A4E5;
+
 * {
     padding: 0;
     margin: 0;
@@ -6,14 +17,106 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+}
 
-    body {
-        .wrapper {
-            width: 941px;
-            margin: 0 auto;
-            padding: 0px 250px;
-            border: 1px solid green;
-        }
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 941px;
+    margin: 0 auto;
+    padding: 0px 250px;
+    border: 1px solid green;
+}
+
+.layouts-2-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+/*header*/
+header {
+    background-image: url('../assets/img/bg.png');
+    background-position: center center;
+    background-size: cover;
+
+    .wrapper {
+        padding: 41px 250px 71px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.logo {
+    width: 102px;
+    height: 23px;
+}
+
+.logo_main {
+    background-image: url('../assets/img/header_logo.png');
+    margin-bottom: 317px;
+}
+
+.header_title {
+    font-family: "BebasNeueBold";
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: @color-base-additional;
+    line-height: 70px;
+}
+
+.header_description {
+    font-size: 1.6rem;
+    text-align: center;
+    color: @color-base-additional;
+    margin-bottom: 221px;
+}
+
+.scroll {
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: @color-base-additional;
+}
+
+/*nav*/
+nav {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.navigation_bar {
+    padding: 24px 0px;
+}
+
+.logo_adt {
+    background-image: url('../assets/img/nav_logo.png');
+    width: 80px;
+    height: 18px;
+}
+
+.menu_item {
+    display: inline-block;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
     }
 
+    a {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: @color-base;
+    }
+
+    .active {
+        color: @color-active-link;
+    }
 }
