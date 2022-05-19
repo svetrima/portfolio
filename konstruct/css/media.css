@@ -1,0 +1,106 @@
+@media (min-width: 1224px) and (max-width: 1441px) {
+  .wrapper {
+    width: 900px;
+    padding: 0px 150px;
+  }
+  header .wrapper {
+    padding: 41px 150px 71px;
+  }
+}
+@media (min-width: 1122px) and (max-width: 1223px) {
+  .wrapper {
+    padding: 0px 80px;
+  }
+  header .wrapper {
+    padding: 31px 80px 61px;
+  }
+}
+@media (min-width: 1064px) and (max-width: 1121px) {
+  .wrapper {
+    width: 70%;
+    padding: 0px 70px;
+  }
+  header .wrapper {
+    padding: 31px 70px 61px;
+  }
+}
+@media (min-width: 320px) and (max-width: 1121px) {
+  header .logo_main {
+    margin-bottom: 150px;
+  }
+  .about .layouts-2-columns {
+    justify-content: center;
+  }
+  .services_main .layouts-3-columns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .services_main__title,
+  .services_main__description {
+    margin-bottom: 30px;
+    padding-left: 0;
+  }
+  .services_main__description {
+    width: auto;
+  }
+  .services_content .layouts-3-columns {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cards_services {
+    margin-right: 0;
+  }
+  .layouts-4-columns {
+    justify-content: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 892px) {
+  .about_gallery .layouts-3-columns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card:not(:last-child) {
+    margin-right: 10px;
+  }
+  .form .wrapper {
+    padding-bottom: 20px;
+  }
+  .form_title {
+    display: block;
+    padding-bottom: 10px;
+    margin-right: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 792px) {
+  .links {
+    order: 2;
+  }
+  .social_links {
+    order: 4;
+  }
+}
+@media (min-width: 320px) and (max-width: 580px) {
+  .links {
+    order: 2;
+  }
+  .social_links {
+    order: 4;
+  }
+}
+@media (min-width: 320px) and (max-width: 1063px) {
+  .wrapper {
+    width: 70%;
+    padding: 0px 40px;
+  }
+  header .wrapper {
+    padding: 11px 40px 31px;
+  }
+}
+@media (min-width: 320px) and (max-width: 415px) {
+  .card {
+    margin-right: 0 !important;
+  }
+  .work_title {
+    width: auto;
+  }
+}
