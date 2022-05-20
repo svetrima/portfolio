@@ -150,8 +150,8 @@ header {
     position: relative;
 }
 
-.skills_title::after,
-.skills_title::before {
+.title::after,
+.title::before {
     content: "";
     position: absolute;
     width: 300px;
@@ -159,11 +159,11 @@ header {
     top: 50%;
 }
 
-.skills_title::after {
+.title::after {
     right: 55%;
 }
 
-.skills_title::before {
+.title::before {
     left: 55%;
 }
 
