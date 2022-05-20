@@ -1,3 +1,9 @@
+@color-base: #48555B;
+@color-base-additional: #FFFFFF;
+@color-active-link: #00A4E5;
+@color-logo-additional: #171819;
+@color-btn: #00A4E5;
+
 @media (min-width: 1224px) and (max-width:1441px) {
     .wrapper {
         width: 900px;
@@ -149,4 +155,132 @@
     .work_title {
         width: auto;
     }
+}
+
+@media (min-width:320px) and (max-width:700px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        background-color: #141A20;
+
+        .logo {
+            display: none;
+        }
+
+        .navigation_bar {
+            padding: 27.5px 0px;
+        }
+
+        .layouts-2-columns {
+            justify-content: center;
+        }
+    }
+
+    .menu_item {
+        margin-right: 10px;
+
+        a {
+            color: @color-base-additional;
+        }
+    }
+
+    header {
+        margin-top: 70px;
+    }
+}
+
+@media (min-width:320px) and (max-width:453px) {
+    .burger_menu {
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: relative;
+        z-index: 2;
+        transition: all 0.5s linear;
+
+        span,
+        span::before,
+        span::after {
+            display: block;
+            width: 40px;
+            height: 3px;
+            position: absolute;
+            background-color: orange;
+            border-radius: 5px;
+            transition: all 0.5s linear;
+        }
+
+        span::after,
+        span::before {
+            content: "";
+        }
+
+        span {
+            top: 20px;
+        }
+
+        span::before {
+            top: -10px;
+        }
+
+        span::after {
+            top: 10px;
+        }
+    }
+
+    .show {
+        transform: translateX(-300%);
+
+        span::after {
+            top: 0;
+            transform: rotate(135deg);
+        }
+
+        span::before {
+            top: 0;
+            transform: rotate(-135deg);
+        }
+
+        span {
+            background-color: transparent;
+        }
+    }
+
+    nav {
+        .navigation_bar {
+            padding: 15px 0px;
+        }
+
+    }
+
+    .menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 70vw;
+        height: 100vh;
+        background: #141A20;
+        box-shadow: 0px 40px 100px rgba(0, 0, 0, 0.9);
+        transition: all 0.3s linear;
+        transform: translateX(-100%);
+        visibility: hidden;
+    }
+
+    .menu_bar {
+        display: flex;
+        flex-direction: column;
+        padding: 112px 0px 0px 40px;
+
+    }
+
+    .menu_bar__show {
+        transform: translateX(0);
+        transition: all 0.5s linear;
+        visibility: visible;
+    }
+
+    .menu_item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
 }
