@@ -44,6 +44,11 @@ a {
     display: flex;
     justify-content: space-between;
 }
+.layouts-3-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .layouts-4-columns {
     display: flex;
@@ -56,6 +61,11 @@ a {
     padding: 0 20px;
     margin: 0 auto;
     border: 1px solid green;
+}
+
+section {
+    background-color: #000000;
+
 }
 
 /*HEADER*/
@@ -135,11 +145,8 @@ header {
 }
 
 /*SKILLS*/
-.skills {
-    background-color: #000000;
-}
 
-.skills_title {
+.title {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-size: 4rem;
@@ -212,4 +219,70 @@ header {
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 10px;
+}
+
+/*PORTFOLIO*/
+.portfolio_title::after {
+    right: 60%;
+}
+
+.portfolio_title::before {
+    left: 60%;
+}
+.portfolio_tag{
+    margin-bottom: 60px;
+}
+.portfolio_tag .layouts-4-columns{
+    justify-content: center;
+}
+.tag{
+font-weight: 400;
+font-size: 2rem;
+line-height: 4rem;
+text-align: center;
+color: #BDAE82;
+cursor: pointer;
+}
+.tag_bordered{
+    border: 2px solid #BDAE82;
+    width:230px;
+}
+.tag_selected, .tag_bordered:hover{
+    background: #BDAE82;
+border: 2px solid #BDAE82;
+color:#000000;
+}
+.gallery_block {
+    width: 450px;
+    height: 560px;    
+    margin-bottom: 25px;
+}
+
+.gallery_block__item {
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.item_1 {
+    background-image: url("../assets/img/gallery/1.jpg");
+}
+
+.item_2 {
+    background-image: url("../assets/img/gallery/2.jpg");
+}
+
+.item_3 {
+    background-image: url("../assets/img/gallery/3.jpg");
+}
+
+.item_4 {
+    background-image: url("../assets/img/gallery/4.jpg");
+}
+
+.item_5 {
+    background-image: url("../assets/img/gallery/5.jpg");
+}
+
+.item_6 {
+    background-image: url("../assets/img/gallery/6.jpg");
 }
