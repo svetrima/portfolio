@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@400;700;900&display=swap');
+
+/*
+
+font-family: 'Merriweather', serif;
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    width: 220px;
+    height: 55px;
+    background-color: #BDAE82;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+}
+
+.layouts-2-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+
+/*HEADER*/
+header {
+    background-image: url("../assets/img/bg.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.header_navigation {
+    margin-bottom: 160px;
+    height: 90px;
+    padding: 20px 0px;
+}
+
+.header_navigation .layouts-2-columns {
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/img/logo.svg");
+}
+
+.logo a {
+    display: block;
+    height: 100%;
+}
+
+.menu_item {
+    display: inline-block;
+}
+
+.menu_item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu_item__links {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 5rem;
+    color: #FFFFFF;
+}
+
+.menu_item__links:hover {
+    color: #E0720B;
+}
+
+.header_content {
+    margin-bottom: 330px;
+    width: 490px;
+    padding: 0px 60px;
+}
+
+.header_content__title {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 12rem;
+    color: #FFFFFF;
+}
+
+.header_content__description {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+.btn_hire {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #000000;
+}
