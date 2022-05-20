@@ -45,6 +45,12 @@ a {
     justify-content: space-between;
 }
 
+.layouts-4-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .wrapper {
     max-width: 1400px;
     padding: 0 20px;
@@ -126,4 +132,84 @@ header {
     font-size: 2rem;
     line-height: 4rem;
     color: #000000;
+}
+
+/*SKILLS*/
+.skills {
+    background-color: #000000;
+}
+
+.skills_title {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 8rem;
+    text-align: center;
+    color: #BDAE82;
+    margin: 100px 0px 60px;
+    position: relative;
+}
+
+.skills_title::after,
+.skills_title::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    border-bottom: 2px solid #BDAE82;
+    top: 50%;
+}
+
+.skills_title::after {
+    right: 55%;
+}
+
+.skills_title::before {
+    left: 55%;
+}
+
+.cards_item {
+    width: 320px;
+}
+
+.cards_item__logo {
+    height: 50px;
+    margin: 0px auto 50px;
+}
+
+.logo_camera {
+    background-image: url("../assets/img/icons/camera.svg");
+    width: 62px;
+}
+
+.logo_video {
+    background-image: url("../assets/img/icons/video.svg");
+    width: 60px;
+}
+
+.logo_retouch {
+    background-image: url("../assets/img/icons/retouch.svg");
+    width: 66px;
+}
+
+.logo_audio {
+    background-image: url("../assets/img/icons/mic.svg");
+    width: 32px;
+}
+
+.cards_item__title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.cards_item__description {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
 }
