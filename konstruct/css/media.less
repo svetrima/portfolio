@@ -97,8 +97,26 @@
         }
     }
 
+    .about_title {
+        margin-bottom: 42px;
+    }
+
+    .services_main {
+        padding-bottom: 40px;
+    }
+
     .card:not(:last-child) {
         margin-right: 10px;
+    }
+
+    .work_title {
+        margin: 20px 0 25px;
+    }
+
+    .work {
+        .wrapper {
+            padding-bottom: 51px;
+        }
     }
 
     .form {
@@ -121,6 +139,18 @@
 
     .social_links {
         order: 4;
+    }
+}
+
+@media (min-width: 320px) and (max-width:442px) {
+    .card {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card:not(:last-child) {
+        margin-right: 0;
     }
 }
 
