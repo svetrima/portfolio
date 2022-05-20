@@ -113,14 +113,10 @@
   .card {
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
   }
   .card:not(:last-child) {
     margin-right: 0;
-  }
-  .work_title {
-    width: auto;
   }
 }
 @media (min-width: 320px) and (max-width: 580px) {
@@ -138,6 +134,14 @@
   }
   header .wrapper {
     padding: 11px 40px 31px;
+  }
+}
+@media (min-width: 320px) and (max-width: 415px) {
+  .card {
+    margin-right: 0 !important;
+  }
+  .work_title {
+    width: auto;
   }
 }
 @media (min-width: 320px) and (max-width: 700px) {
