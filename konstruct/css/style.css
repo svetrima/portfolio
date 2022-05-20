@@ -53,6 +53,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-margin-top: 69px;
 }
 html {
   font-family: "OpenSans", sans-serif;
@@ -85,7 +86,6 @@ a {
   width: 941px;
   margin: 0 auto;
   padding: 0px 250px;
-  border: 1px solid green;
 }
 .layouts-2-columns {
   display: flex;
@@ -157,6 +157,10 @@ header .wrapper {
 /*nav*/
 nav {
   border-bottom: 1px solid #E6E6E6;
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 .navigation_bar {
   padding: 24px 0px;
