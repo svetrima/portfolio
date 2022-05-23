@@ -64,13 +64,14 @@ a {
     border: 1px solid green;
 }
 
-section {
+section,
+header {
     background-color: #000000;
 
 }
 
 /*HEADER*/
-header {
+header .wrapper {
     background-image: url("../assets/img/bg.png");
     background-position: center center;
     background-size: cover;
@@ -147,7 +148,8 @@ header {
 
 /*SKILLS*/
 
-.title {
+.title,
+.contact_title {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-size: 4rem;
@@ -365,4 +367,64 @@ video {
     line-height: 4rem;
     text-align: center;
     color: #000000;
+}
+
+/*CONTACTS*/
+.contact .wrapper {
+    background-image: url("../assets/img/contacts_bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contact_title {
+    width: 450px;
+    text-align: left;
+}
+
+.form_feedback,
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+form {
+    align-items: flex-start;
+    width: 450px;
+    padding-bottom: 195px;
+}
+
+input,
+textarea {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #BDAE82;
+    height: 50px;
+    margin-bottom: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    outline: none;
+    color: #BDAE82;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #BDAE82;
+}
+
+.btn_submit {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #000000;
+    padding: unset;
 }
