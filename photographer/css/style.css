@@ -65,9 +65,9 @@ a {
 }
 
 section,
-header {
+header,
+footer {
     background-color: #000000;
-
 }
 
 /*HEADER*/
@@ -427,4 +427,41 @@ textarea::placeholder {
     text-align: center;
     color: #000000;
     padding: unset;
+}
+
+/*FOOTER*/
+footer .wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer span,
+footer a:not(.social) {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 5rem;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #BDAE82;
+}
+
+.copyright {
+    width: 182px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    fill: #FFFFFF;
+}
+
+.icon:hover {
+    fill: #BDAE82;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
 }
