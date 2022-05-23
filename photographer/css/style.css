@@ -294,22 +294,75 @@ header {
 .item_6 {
     background-image: url("../assets/img/gallery/6.jpg");
 }
+
 /*VIDEO*/
-.video_player{
+.video_player {
     position: relative;
 }
-video{
+
+video {
     width: 1400px;
-height: 705px;
-border:1px solid red;
+    height: 705px;
 }
-.btn_play{
+
+.btn_play {
     background-image: url("../assets/img/Play_hover.svg");
     width: 129.86px;
-height: 130px;
-position: absolute;
-top:50%;
-left:50%;
-border:none;
-background-color: transparent;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+/*PRICE*/
+.cards_price {
+    padding-bottom: 100px;
+}
+
+.card {
+    border: 3px solid #BDAE82;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_title {
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 5.6rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 43px 0 20px;
+}
+
+.card_price {
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4.8rem;
+    text-align: center;
+    color: #BDAE82;
+    margin-bottom: 20px;
+}
+
+.card_order {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.btn_order {
+    margin-bottom: 43px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #000000;
 }
