@@ -44,6 +44,7 @@ a {
     display: flex;
     justify-content: space-between;
 }
+
 .layouts-3-columns {
     display: flex;
     justify-content: space-between;
@@ -229,32 +230,39 @@ header {
 .portfolio_title::before {
     left: 60%;
 }
-.portfolio_tag{
+
+.portfolio_tag {
     margin-bottom: 60px;
 }
-.portfolio_tag .layouts-4-columns{
+
+.portfolio_tag .layouts-4-columns {
     justify-content: center;
 }
-.tag{
-font-weight: 400;
-font-size: 2rem;
-line-height: 4rem;
-text-align: center;
-color: #BDAE82;
-cursor: pointer;
+
+.tag {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #BDAE82;
+    cursor: pointer;
 }
-.tag_bordered{
+
+.tag_bordered {
     border: 2px solid #BDAE82;
-    width:230px;
+    width: 230px;
 }
-.tag_selected, .tag_bordered:hover{
+
+.tag_selected,
+.tag_bordered:hover {
     background: #BDAE82;
-border: 2px solid #BDAE82;
-color:#000000;
+    border: 2px solid #BDAE82;
+    color: #000000;
 }
+
 .gallery_block {
     width: 450px;
-    height: 560px;    
+    height: 560px;
     margin-bottom: 25px;
 }
 
@@ -285,4 +293,23 @@ color:#000000;
 
 .item_6 {
     background-image: url("../assets/img/gallery/6.jpg");
+}
+/*VIDEO*/
+.video_player{
+    position: relative;
+}
+video{
+    width: 1400px;
+height: 705px;
+border:1px solid red;
+}
+.btn_play{
+    background-image: url("../assets/img/Play_hover.svg");
+    width: 129.86px;
+height: 130px;
+position: absolute;
+top:50%;
+left:50%;
+border:none;
+background-color: transparent;
 }
