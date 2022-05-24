@@ -104,8 +104,12 @@ header .wrapper {
     display: inline-block;
 }
 
-.menu_item:not(:last-child) {
-    margin-right: 30px;
+.menu_item {
+    margin-right: 28px;
+}
+
+.menu_item:last-child {
+    margin-right: 32px;
 }
 
 .menu_item__links {
@@ -115,9 +119,33 @@ header .wrapper {
     color: #FFFFFF;
 }
 
-.menu_item__links:hover {
+.btn_lang {
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 5rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn_lang:last-child {
+    margin-right: -1px;
+}
+
+.btn_lang__en::after {
+    content: "/";
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.menu_item__links:hover,
+.active {
     color: #BDAE82;
 }
+
 
 /*HERO*/
 .hero .wrapper {
