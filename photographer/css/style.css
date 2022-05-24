@@ -338,8 +338,8 @@ video {
     width: 129.86px;
     height: 130px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 41%;
+    left: 45.5%;
     border: none;
     cursor: pointer;
     background-color: transparent;
@@ -357,11 +357,12 @@ video {
 /*PRICE*/
 .cards_price {
     padding-bottom: 100px;
+    margin-top: -2px;
 }
 
 .card {
     border: 3px solid #BDAE82;
-    width: 450px;
+    width: 444px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,7 +375,7 @@ video {
     line-height: 5.6rem;
     text-align: center;
     color: #FFFFFF;
-    margin: 43px 0 20px;
+    margin: 40px 0 20px;
 }
 
 .card_price {
@@ -397,12 +398,13 @@ video {
 }
 
 .btn_order {
-    margin-bottom: 43px;
+    margin-bottom: 40px;
     font-weight: 400;
     font-size: 2rem;
     line-height: 4rem;
     text-align: center;
     color: #000000;
+    letter-spacing: 0.8px;
 }
 
 /*CONTACTS*/
@@ -416,6 +418,7 @@ video {
 .contact_title {
     width: 450px;
     text-align: left;
+    margin: 60px 0px 40px;
 }
 
 .form_feedback,
@@ -428,7 +431,7 @@ form {
 form {
     align-items: flex-start;
     width: 450px;
-    padding-bottom: 195px;
+    padding-bottom: 175px;
 }
 
 input,
@@ -437,11 +440,11 @@ textarea {
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
     height: 50px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 13px 15px;
+    padding: 13px 16px;
     outline: none;
     color: #BDAE82;
 }
@@ -449,10 +452,15 @@ textarea {
 textarea {
     height: 100px;
     resize: none;
+    margin-bottom: 30px;
 }
 
 input::placeholder,
 textarea::placeholder {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 5rem;
     color: #BDAE82;
 }
 
@@ -468,7 +476,6 @@ textarea::placeholder {
 /*FOOTER*/
 footer .wrapper {
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 footer span,
@@ -484,7 +491,8 @@ footer a:hover {
 }
 
 .copyright {
-    width: 182px;
+    width: 170px;
+    margin-right: 17px;
 }
 
 .icon {
@@ -496,6 +504,14 @@ footer a:hover {
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+}
+
+.social_icon:not(:last-child) {
+    margin-right: 17px;
+}
+
+.icon {
+    padding: 9px 0px;
 }
 
 .icon:hover {
