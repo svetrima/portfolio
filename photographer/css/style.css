@@ -168,8 +168,13 @@ header .wrapper {
     line-height: 8rem;
     text-align: center;
     color: #BDAE82;
-    margin: 100px 0px 60px;
     position: relative;
+}
+
+.title {
+    width: 50%;
+    overflow-x: hidden;
+    margin: 100px auto 60px;
 }
 
 .title::after,
@@ -182,11 +187,11 @@ header .wrapper {
 }
 
 .title::after {
-    right: 55%;
+    right: -25px;
 }
 
 .title::before {
-    left: 55%;
+    left: -25px;
 }
 
 .cards_item {
@@ -234,6 +239,7 @@ header .wrapper {
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 10px;
+    padding: 0px 18px;
 }
 
 /*PORTFOLIO*/
@@ -256,15 +262,20 @@ header .wrapper {
 .tag {
     font-weight: 400;
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 5rem;
     text-align: center;
     color: #BDAE82;
     cursor: pointer;
 }
 
+.tag:not(:last-child) {
+    margin-right: 5px;
+}
+
 .tag_bordered {
     border: 2px solid #BDAE82;
-    width: 230px;
+    width: 216px;
+    height: 51px;
 }
 
 .tag_selected,
@@ -277,6 +288,9 @@ header .wrapper {
 .gallery_block {
     width: 450px;
     height: 560px;
+}
+
+.gallery_block:not(:nth-child(n+4)) {
     margin-bottom: 25px;
 }
 
