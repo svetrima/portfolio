@@ -196,7 +196,6 @@ header .wrapper {
     line-height: 8rem;
     text-align: center;
     color: #BDAE82;
-    position: relative;
 }
 
 .title {
@@ -204,24 +203,24 @@ header .wrapper {
     overflow-x: hidden;
     margin: 100px auto 60px;
 }
-
 .title::after,
-.title::before {
-    content: "";
-    position: absolute;
-    width: 300px;
+.title::before{
+    content:"";
+    display:inline-block;
     border-bottom: 2px solid #BDAE82;
-    top: 50%;
+    position: relative;
+    width:300px;
+    vertical-align: middle;
+    top:-2px;
 }
-
 .title::after {
-    right: -25px;
+     right: -20px;
+    margin-right: -100%;
+ }
+ .title::before {
+    left: -20px;
+   margin-left: -100%;
 }
-
-.title::before {
-    left: -25px;
-}
-
 .cards_item {
     width: 320px;
 }
@@ -271,14 +270,6 @@ header .wrapper {
 }
 
 /*PORTFOLIO*/
-.portfolio_title::after {
-    right: 60%;
-}
-
-.portfolio_title::before {
-    left: 60%;
-}
-
 .portfolio_tag {
     margin-bottom: 60px;
 }
@@ -387,7 +378,9 @@ video {
     padding-bottom: 100px;
     margin-top: -2px;
 }
-
+.price_title::after, .price_title::before {
+    top:-4px;
+}
 .card {
     border: 3px solid #BDAE82;
     width: 444px;
