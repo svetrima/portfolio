@@ -130,7 +130,7 @@ header .wrapper {
 .hero_content {
     /* margin-bottom: 330px;*/
     width: 490px;
-    padding: 160px 60px 330px;
+    padding: 159.5px 60px 330px;
 }
 
 .hero_content__title {
@@ -139,6 +139,7 @@ header .wrapper {
     font-size: 6rem;
     line-height: 12rem;
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 .hero_content__description {
@@ -153,6 +154,7 @@ header .wrapper {
     font-weight: 400;
     font-size: 2rem;
     line-height: 4rem;
+    letter-spacing: 0.35px;
     color: #000000;
 }
 
