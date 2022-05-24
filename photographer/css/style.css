@@ -64,17 +64,13 @@ a {
     margin: 0 auto;
     /*border: 1px solid green;*/
 }
-section,
-header,
-footer {
-    background-color: #000000;
-}
 
 /*HEADER*/
-header .wrapper{
+header .wrapper {
     background-image: url("../assets/img/bg.png");
     background-size: cover;
 }
+
 .header_navigation {
     height: 50px;
     padding: 20px 0px;
@@ -88,6 +84,15 @@ header .wrapper{
     width: 50px;
     height: 50px;
     background-image: url("../assets/svg/logo.svg");
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.logo:hover {
+    filter: invert(74%) sepia(8%) saturate(1242%) hue-rotate(7deg) brightness(93%) contrast(91%);
 }
 
 .logo a {
@@ -111,8 +116,9 @@ header .wrapper{
 }
 
 .menu_item__links:hover {
-    color: #E0720B;
+    color: #BDAE82;
 }
+
 /*HERO*/
 .hero .wrapper {
     background-image: url("../assets/img/bg.png");
@@ -120,8 +126,9 @@ header .wrapper{
     background-size: cover;
     /*height:910px;*/
 }
+
 .hero_content {
-   /* margin-bottom: 330px;*/
+    /* margin-bottom: 330px;*/
     width: 490px;
     padding: 160px 60px 330px;
 }
@@ -318,7 +325,17 @@ video {
     top: 50%;
     left: 50%;
     border: none;
+    cursor: pointer;
     background-color: transparent;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.btn_play:hover {
+    filter: invert(74%) sepia(8%) saturate(1242%) hue-rotate(7deg) brightness(93%) contrast(91%);
 }
 
 /*PRICE*/
@@ -458,13 +475,18 @@ footer a:hover {
     width: 32px;
     height: 32px;
     fill: #FFFFFF;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .icon:hover {
     fill: #BDAE82;
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
 }
