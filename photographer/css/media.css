@@ -87,99 +87,151 @@
     .navigation_bar {
         width: 70vw;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         background-color: #000000;
         display: flex;
         flex-direction: column;
         padding: 134px 0px 0px 127px;
-        transform: translateY(-100%);
-        -webkit-transform: translateY(-100%);
-        -moz-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-        -o-transform: translateY(-100%);
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
         transition: transform 0.5s linear;
         -webkit-transition: transform 0.5s linear;
         -moz-transition: transform 0.5s linear;
         -ms-transition: transform 0.5s linear;
         -o-transition: transform 0.5s linear;
-}
+    }
 
     .navigation_bar__show {
         box-shadow: -148px 4px 8px 0px rgba(0, 0, 0, 0.5);
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
         transition: transform 0.5s linear;
         -webkit-transition: transform 0.5s linear;
         -moz-transition: transform 0.5s linear;
         -ms-transition: transform 0.5s linear;
         -o-transition: transform 0.5s linear;
-}
-.menu_item__links {
-    font-size: 3.5rem;
-    line-height: 7.3rem;
+    }
 
-} 
-.hero_content{
-    width:390px;
-}
-.hero_content__title{
-    font-size: 3.2rem;
-}
-.hero_content__description {
-       line-height: 2.42rem;
-}
-.title{
-    font-size: 3.2rem;
-}
-.title::after,
-.title::before{
-    width:233px;
-}
-.cards_item{
-    width:300px;
-}
-.portfolio_tag .layouts-4-columns{
-    padding:0px 121px;
-}
-.tag:nth-child(2n){
-    margin-right:0;
-}
-.tag:not(:last-child){
-    margin-bottom:5px;
-}
+    .menu_item__links {
+        font-size: 3.5rem;
+        line-height: 7.3rem;
+
+    }
+
+    .hero_content {
+        width: 390px;
+        padding-left: 60px;
+        padding-right: 0px;
+        padding-top: 78px;
+    }
+
+    .hero_content__title {
+        font-size: 3.2rem;
+    }
+
+    .hero_content__description {
+        line-height: 2.42rem;
+    }
+
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .title::after,
+    .title::before {
+        width: 233px;
+    }
+
+    .cards_item {
+        width: 300px;
+    }
+
+    .portfolio_tag .layouts-4-columns {
+        padding: 0px 121px;
+    }
+
+    .tag:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .tag:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
     .video_player {
         width: 100vw;
-        margin-left:-20px;
+        margin-left: -20px;
     }
-    .card{
-        width:420px;
+
+    .card {
+        width: 420px;
     }
-    .form_feedback{
+
+    .form_feedback {
         align-items: center;
     }
-    .contact_title{
+
+    .contact_title {
         text-align: center;
     }
-    .btn_submit{
-        transform: translateX(50%);
-        -webkit-transform: translateX(50%);
-        -moz-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        -o-transform: translateX(50%);
-}
-footer .wrapper>.layouts-3-columns{
-    flex-direction: column;
-    align-items: center;
-}
-footer .wrapper{
-    padding-top:28px;
-}
+
+    .btn_submit {
+        margin: 0 auto;
+    }
+
+    footer .wrapper>.layouts-3-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .wrapper {
+        padding-top: 28px;
+    }
 }
 
 /*479-->320 control breakpoint*/
-@media screen and (min-width:480px) and (max-width:768px) {}
+@media screen and (min-width:320px) and (max-width:479px) {
+    .hero_content {
+        width: 300px;
+        padding-left: 20px;
+        padding-bottom: 250px;
+        border: 1px solid white;
+    }
+
+    .title {
+        width: 60vw;
+    }
+
+    .video_player {
+        margin-left: -19.9px;
+    }
+
+    form {
+        width: 80vw;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:726px) {
+    .tag:nth-child(n) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:490px) {
+    .gallery_block {
+        width: 300px;
+    }
+
+    .title {
+        margin-top: 40px;
+    }
+}
