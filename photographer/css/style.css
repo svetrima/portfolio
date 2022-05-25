@@ -68,7 +68,8 @@ a {
 /*HEADER*/
 header .wrapper {
     background-image: url("../assets/img/bg.png");
-    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
 }
 
 .header_navigation {
@@ -145,11 +146,11 @@ header .wrapper {
 .active {
     color: #BDAE82;
 }
+
 /*HERO*/
 .hero .wrapper {
     background-image: url("../assets/img/bg.png");
     background-position: center -90px;
-    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -346,7 +347,7 @@ header .wrapper {
 /*VIDEO*/
 .video_player {
     position: relative;
-   /* width: 1400px;*/
+    /* width: 1400px;*/
     height: 705px;
     background-image: url("../assets/img/video-player.jpg");
 }
