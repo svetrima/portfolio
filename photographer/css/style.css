@@ -13,11 +13,13 @@ html {
     font-family: "Inter", sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     box-sizing: border-box;
     background-color: #000000;
+    overflow-x: hidden;
 }
 
 ul {
