@@ -27,8 +27,8 @@
                                 <li class="menu_item"><a href="#contacts" class="menu_item__links" data-i18="contacts">Contacts</a></li>
                             </ul>
                             <div class="language">
-                                <button class="btn_lang btn_lang__en active">en</button>
-                                <button class="btn_lang btn_lang__ru">ru</button>
+                                <button class="btn_lang btn_lang__en active" data-lang="en">en</button>
+                                <button class="btn_lang btn_lang__ru" data-lang="ru">ru</button>
                             </div>
                             <div id="burger" class="burger_menu">
                                 <span></span>
@@ -177,9 +177,9 @@
                 <div class="form_feedback">
                     <h2 class="contact_title" data-i18="contact-me">Contact me</h2>
                     <form action="">
-                        <input type="email" name="email" id="email" placeholder="E-mail" required>
-                        <input type="tel" name="phone" id="phone" placeholder="Phone">
-                        <textarea name="text-field" id="text-field" placeholder="Message"></textarea>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required data-i18="email">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone" data-i18="phone">
+                        <textarea name="text-field" id="text-field" placeholder="Message" data-i18="message"></textarea>
                         <input type="submit" value="Send message" class="btn btn_submit" data-i18="send-message">
                     </form>
                 </div>
