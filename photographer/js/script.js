@@ -38,8 +38,6 @@ const btnsRuEn = document.querySelectorAll('.btn_lang');
 const dataEl = document.querySelectorAll('[data-i18]');
 console.log(btnsRuEn)
 
-
-
 languages.addEventListener('click', (e) => {
   e.target.nodeName !== 'BUTTON' ? '' :
     btnsRuEn.forEach((btn) => btn.classList.remove('active'));
@@ -61,4 +59,11 @@ const getTranslate = (language) => {
     }
   })
 };
-getTranslate(localStorage.getItem('language'));
+//getTranslate(localStorage.getItem('language'));
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('language')) {
+    getTranslate(localStorage.getItem('language'));
+  }
+  document.querySelector(`[data-lang="${localStorage.getItem('language')}"]`).classList.add('active');
+});
+/*save active class after page refresh*/
