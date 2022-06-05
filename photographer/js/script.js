@@ -67,3 +67,20 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector(`[data-lang="${localStorage.getItem('language')}"]`).classList.add('active');
 });
 /*save active class after page refresh*/
+
+/*portfolio*/
+const galleryImages = document.querySelectorAll('.portfolio_img');
+const btnsGallery = document.querySelector('.portfolio_btns');
+
+btnsGallery.addEventListener('click', (e) => {
+  const btnGallery = document.querySelectorAll('.btn_portfolio');
+  btnGallery.forEach(btn => btn.classList.remove('btn_selected'));
+  e.target.classList.add('btn_selected')
+});
+
+const changeImages = (event) => {
+  if (event.target.classList.contains('btn_portfolio')) {
+    galleryImages.forEach((image, index) => image.src = `assets/img/gallery/${event.target.dataset.season}/${index + 1}.jpg`)
+  }
+}
+btnsGallery.addEventListener('click', changeImages)
